@@ -100,7 +100,7 @@ com<-data.frame(train[train$species=='Quercus_Palustris' ,])
 id<-data.frame(df[df$id==377,])
 com<-rbind(com,id)
 
-datalistcom = list()
+datalistcom = list() 
 for (i in 1:(ncol(com)-2))
 {
   p<-com[com[,i+2]==boxplot(com[,i+2])$out,"id"]
